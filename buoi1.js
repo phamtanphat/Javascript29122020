@@ -17,6 +17,24 @@
 // console.log(a)
 // var a
 
+// Th2 : Truy vấn vào thuộc tính không tồn tại
+
+// const teo = {
+//     name : "Nguyen Van Teo",
+//     age : 10
+// }
+// console.log(teo['name']['a'])
+
 // npm i -g nodemon : Thư viện nodemon
+
+// 3 : Object 
+
+const teo = {
+    name : "Nguyen Van Teo",
+    age : 10
+}
+console.log(teo['name']['a'])
+
+
 
 
