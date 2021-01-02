@@ -37,11 +37,22 @@
 
 // 4 : Array (Lớp đối tượng duyệt theo dạng danh sách)
 
-const arrNames = ["Teo","Ti","Tun","Tuan"]
-arrNames[0] = "Toan"
-console.log(arrNames[0])
+// const arrNames = ["Teo","Ti","Tun","Tuan"]
+// arrNames[0] = "Toan"
+// console.log(arrNames[0])
 
+// 5 : Operator
+var a = 5
+var b = 10
 
-
+var ketqua = a++ - --b + --b + b-- - ++a + --b;
+// 5 - --b + --b + b-- - ++a + --b  a = 6 , b = 10
+// 5 - 9 + --b + b-- - ++a + --b  a = 6 , b = 9
+// 5 - 9 + 8 + b-- - ++a + --b  a = 6 , b = 8
+// 5 - 9 + 8 + 8 - ++a + --b  a = 6 , b = 7
+// 5 - 9 + 8 + 8 - 7 + --b  a = 7 , b = 7
+// 5 - 9 + 8 + 8 - 7 + 6  a = 7 , b = 6
+// -4 + 15 = // 11
+console.log(ketqua)
 
 
