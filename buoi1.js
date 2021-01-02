@@ -29,11 +29,18 @@
 
 // 3 : Object 
 
-const teo = {
-    name : "Nguyen Van Teo",
-    age : 10
-}
-console.log(teo['name']['a'])
+// const teo = {
+//     name : "Nguyen Van Teo",
+//     age : 10
+// }
+// console.log(teo['name']['a'])
+
+// 4 : Array (Lớp đối tượng duyệt theo dạng danh sách)
+
+const arrNames = ["Teo","Ti","Tun","Tuan"]
+arrNames[0] = "Toan"
+console.log(arrNames[0])
+
 
 
 
