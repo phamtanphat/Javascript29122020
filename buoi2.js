@@ -69,4 +69,19 @@
    * price
    * Chú ý: không cần hiển thị ra đúng thứ tự như trên
    */
-  
+
+// 10 : Call back
+const arr = [5,10,15,20,25]
+
+function doubleValue(number) {
+    return number * number
+}
+function calculateArr(arr , cb) {
+    var result = 0
+    for(var value of arr){
+        result += value
+    }
+    return cb(result)
+}
+
+console.log(calculateArr(arr , doubleValue))
