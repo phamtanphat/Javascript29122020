@@ -67,11 +67,21 @@
 
 // 6 : function
 
-console.log(showName("Teo"))
+// console.log(showName("Teo"))
 
-function showName(name) {
-    console.log(name)
-}
+// function showName(name) {
+//     console.log(name)
+// }
+
+// 7 : object method
+
+// const teo = {
+//     name : 'Nguyễn Văn Tèo',
+//     age : 10,
+//     showInfo : function () {
+//         console.log("Name : " + this.name + "\n" + "Age : " + this.age)
+//     }
+// }
 
 
 
