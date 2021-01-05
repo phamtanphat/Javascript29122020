@@ -145,7 +145,7 @@
 // ])
 // ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
 
-const numbers = [1,2,3,4,5,6,7,8,9,10]
+// const numbers = [1,2,3,4,5,6,7,8,9,10]
 
 // const newNumbers =  numbers.map(function(value , index ){
 //     if (value % 2 == 0){
@@ -156,19 +156,39 @@ const numbers = [1,2,3,4,5,6,7,8,9,10]
 
 // console.log(newNumbers)
 
-Array.prototype.myMap = function(cb){
-    const newArr = []
-    for (var i = 0 ; i < this.length ; i++){
-        newArr.push(cb(this[i] , i))
-    }
-    return newArr
-}
+// Array.prototype.myMap = function(cb){
+//     const newArr = []
+//     for (var i = 0 ; i < this.length ; i++){
+//         newArr.push(cb(this[i] , i))
+//     }
+//     return newArr
+// }
 
-const newNumbers =  numbers.myMap(function(value , index ){
-    if (value % 2 == 0){
-        return value / 2
+// const newNumbers =  numbers.myMap(function(value , index ){
+//     if (value % 2 == 0){
+//         return value / 2
+//     }
+//     return value
+// })
+
+// console.log(newNumbers)
+
+
+// 12 : Ham filter
+
+// Ví dụ
+
+const arrPersons = [
+    {name : 'Teo' , age : 10},
+    {name : 'Ti' , age : 12},
+    {name : 'Tun' , age : 13},
+    {name : 'Hoa' , age : 14},
+]
+
+const newArrPersons = arrPersons.filter(function(person , index){
+    if (person.age % 2 == 0 ){
+        return true
     }
-    return value
+    return false
 })
-
-console.log(newNumbers)
+console.log(newArrPersons)
