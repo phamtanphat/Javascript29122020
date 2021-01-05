@@ -71,17 +71,104 @@
    */
 
 // 10 : Call back
-const arr = [5,10,15,20,25]
+// const arr = [5,10,15,20,25]
 
-function doubleValue(number) {
-    return number * number
-}
-function calculateArr(arr , cb) {
-    var result = 0
-    for(var value of arr){
-        result += value
+// function doubleValue(number) {
+//     return number * number
+// }
+// function calculateArr(arr , cb) {
+//     var result = 0
+//     for(var value of arr){
+//         result += value
+//     }
+//     return cb(result)
+// }
+
+// console.log(calculateArr(arr , doubleValue))
+
+// 11 : Array method
+// const numbers  = [1,2,3]
+
+// Thêm phần tử vào cuối mảng
+// numbers.push(4,5,6)
+// Thêm phần tử ở đầu mảng
+// numbers.unshift(4)
+// Xóa phần tử ở cuối mảng
+// numbers.pop()
+// Xóa phần tử ở đầu mảng
+// numbers.shift()
+// Thêm hoặc xóa phần tử giữa mảng
+// numbers.splice(numbers.length,0,1.1)
+// console.log(numbers)
+
+// 12 : Map (Convert)
+// const numbers = [1,2,3,4,5,6,7,8,9,10]
+
+// const newNumbers =  numbers.map(function(value , index ){
+//     if (value % 2 == 0){
+//         return value / 2
+//     }
+//     return value
+// })
+
+// console.log(newNumbers)
+
+// Make an array of strings of the names
+// function namesOnly(arr) {
+//     const newArr = arr.map(function(person , index){
+//         return person.name
+//     })
+//     console.log(newArr)
+// }
+
+// namesOnly([
+//   {
+//     name: "Angelina Jolie",
+//     age: 80
+//   },
+//   {
+//     name: "Eric Jones",
+//     age: 2
+//   },
+//   {
+//     name: "Paris Hilton",
+//     age: 5
+//   },
+//   {
+//     name: "Kayne West",
+//     age: 16
+//   },
+//   {
+//     name: "Bob Ziroll",
+//     age: 100
+//   }
+// ])
+// ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
+
+const numbers = [1,2,3,4,5,6,7,8,9,10]
+
+// const newNumbers =  numbers.map(function(value , index ){
+//     if (value % 2 == 0){
+//         return value / 2
+//     }
+//     return value
+// })
+
+// console.log(newNumbers)
+
+Array.prototype.myMap = function(cb){
+    const newArr = []
+    for (var i = 0 ; i < this.length ; i++){
+        newArr.push(cb(this[i] , i))
     }
-    return cb(result)
+    return newArr
 }
 
-console.log(calculateArr(arr , doubleValue))
+const newNumbers =  numbers.myMap(function(value , index ){
+    if (value % 2 == 0){
+        return value / 2
+    }
+    return value
+})
+
+console.log(newNumbers)
