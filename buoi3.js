@@ -123,3 +123,19 @@
 //     var b = 10
 // }
 // console.log(b)
+
+// 18 : function context & bind
+
+var mouse = {
+    name : 'Mickey',
+    sayhi : function() {
+      console.log('Hi, my name is' , this.name)
+    }
+  }
+  
+var say = mouse.sayhi.bind({name : "hello"})
+say()
+
+
+
+  
