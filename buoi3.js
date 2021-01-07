@@ -34,19 +34,26 @@
 // ];
 // totalVotes(voters) // 7
 
-function countOccurrences(arr) {
-    const object = arr.reduce(function(accumulator , currentValue){
-        if (currentValue in accumulator){
-            accumulator[currentValue]++
-        }else{
-            accumulator[currentValue] = 1
-        }
-        return accumulator
-    },{})
-    console.log(object)  
-}
-countOccurrences(["a", "b", "c", "b", "a", "a"]);
+// function countOccurrences(arr) {
+//     const object = arr.reduce(function(accumulator , currentValue){
+//         if (currentValue in accumulator){
+//             accumulator[currentValue]++
+//         }else{
+//             accumulator[currentValue] = 1
+//         }
+//         return accumulator
+//     },{})
+//     console.log(object)  
+// }
+// countOccurrences(["a", "b", "c", "b", "a", "a"]);
 
 // {a : 3 , b : 2 , c : 1}
 
+// 13 : Ham sort
 
+const arrNumbers = [1,3,5,7,9,11,12,13,14]
+
+const newArrNumbers = arrNumbers.sort(function(a , b){
+    return b - a
+});
+console.log(newArrNumbers)
