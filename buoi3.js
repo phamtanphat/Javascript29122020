@@ -70,16 +70,26 @@
 
 // function constructor
 
-function Person(name , age){
-    this.name = name
-    this.age = age
-}
+// function Person(name , age){
+//     this.name = name
+//     this.age = age
+// }
 
-Person.prototype.showInfo = function(){
-    console.log(this.name + " , "  + this.age)
-}
+// Person.prototype.showInfo = function(){
+//     console.log(this.name + " , "  + this.age)
+// }
 
-const teo1 = new Person("Nguyen Van Teo", 10)
-const teo2 = new Person("Nguyen Van Teo", 10)
+// const teo1 = new Person("Nguyen Van Teo", 10)
+// const teo2 = new Person("Nguyen Van Teo", 10)
 
-console.log(typeof Person.prototype)
+// console.log(typeof Person.prototype)
+
+// 15 : Bieu thuc 3 ngoi
+// let a = 5
+// let b = 6
+// a > b = 1
+// a < b = -1
+// a == b = 0
+
+// let result = a > b ? 1 : a == b ? 0 : -1
+// console.log(result)
