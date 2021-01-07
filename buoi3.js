@@ -93,3 +93,14 @@
 
 // let result = a > b ? 1 : a == b ? 0 : -1
 // console.log(result)
+
+// 16: Function scope
+let a = "Hello"
+
+function alert(){
+    let a = "xin chao"
+    console.log(a)
+}
+
+alert()
+console.log(a)
