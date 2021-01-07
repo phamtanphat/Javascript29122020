@@ -95,12 +95,31 @@
 // console.log(result)
 
 // 16: Function scope
-let a = "Hello"
+// let a = "Hello"
 
-function alert(){
-    let a = "xin chao"
-    console.log(a)
-}
+// function alert(){
+//     let a = "xin chao"
+//     console.log(a)
+// }
 
-alert()
-console.log(a)
+// alert()
+// console.log(a)
+
+// 17 : var let 
+
+// Khoi tao lai
+// let a = "10"
+// let a = "11"
+// console.log(a)
+
+// Hoisting
+// console.log(a)
+// let a
+
+// block scope
+// var a = 5
+
+// if(a == 5){
+//     var b = 10
+// }
+// console.log(b)
