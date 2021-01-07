@@ -51,9 +51,35 @@
 
 // 13 : Ham sort
 
-const arrNumbers = [1,3,5,7,9,11,12,13,14]
+// const arrNumbers = [1,3,5,7,9,11,12,13,14]
 
-const newArrNumbers = arrNumbers.sort(function(a , b){
-    return b - a
-});
-console.log(newArrNumbers)
+// const newArrNumbers = arrNumbers.sort(function(a , b){
+//     return b - a
+// });
+// console.log(newArrNumbers)
+
+// const teo = {
+//     name : "Nguyen Van Teo"
+// }
+
+// delete teo.name
+
+// console.log(teo)
+
+// 14 : Prototype
+
+// function constructor
+
+function Person(name , age){
+    this.name = name
+    this.age = age
+}
+
+Person.prototype.showInfo = function(){
+    console.log(this.name + " , "  + this.age)
+}
+
+const teo1 = new Person("Nguyen Van Teo", 10)
+const teo2 = new Person("Nguyen Van Teo", 10)
+
+console.log(typeof Person.prototype)
