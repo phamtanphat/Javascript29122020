@@ -66,3 +66,16 @@
 //   }
 // greeting.call(null , 'Tom' , 10)
   
+// 23 : rest
+// function sum(...nums){
+//     return nums.reduce((a ,b) => a + b)
+// }
+// sum(1,2,3,4,5)
+
+// 24 : spread
+const a = [1,2,3]
+
+function sum(...numbers){
+    console.log(numbers.join())
+}
+console.log(...a)
