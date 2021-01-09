@@ -32,3 +32,23 @@
 // let url = `https://developer.mozilla.org/vi/${api}/Web/JavaScript/Closures`
   
 // console.log(url)
+
+// 21 : Argument 
+
+// Array like object
+// const number = {
+//     0 : 1,
+//     1 : 2,
+//     length : 2
+// }
+
+// const newArrNum = Array.from(number)
+// console.log(newArrNum)
+
+function tinhTong(){
+    const arr = Array.from(arguments)
+    return arr.reduce((accumulator , currentValue) => {
+        return accumulator + currentValue
+    },0)
+}
+console.log(tinhTong(1,2,3,4,5,6))
