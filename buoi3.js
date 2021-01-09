@@ -126,15 +126,15 @@
 
 // 18 : function context & bind
 
-var mouse = {
-    name : 'Mickey',
-    sayhi : function() {
-      console.log('Hi, my name is' , this.name)
-    }
-  }
+// var mouse = {
+//     name : 'Mickey',
+//     sayhi : function() {
+//       console.log('Hi, my name is' , this.name)
+//     }
+//   }
   
-var say = mouse.sayhi.bind({name : "hello"})
-say()
+// var say = mouse.sayhi.bind({name : "hello"})
+// say()
 
 
 
