@@ -73,9 +73,25 @@
 // sum(1,2,3,4,5)
 
 // 24 : spread
-const a = [1,2,3]
+// const a = [1,2,3]
 
-function sum(...numbers){
-    console.log(numbers.join())
-}
-console.log(...a)
+// function sum(...numbers){
+//     console.log(numbers.join())
+// }
+// console.log(...a)
+
+
+// 25 : Destructuring
+// Th object
+// const teo = {
+//     name  : "Nguyen van Teo",
+//     age : 10
+// }
+
+// const {name , age} = teo
+// console.log(name , age)
+// Th Array
+// const numbers = [1,2,3,4,5,6]
+
+// const [a, b, c, d, e, f] = numbers
+// console.log(a)
