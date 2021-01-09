@@ -45,10 +45,24 @@
 // const newArrNum = Array.from(number)
 // console.log(newArrNum)
 
-function tinhTong(){
-    const arr = Array.from(arguments)
-    return arr.reduce((accumulator , currentValue) => {
-        return accumulator + currentValue
-    },0)
-}
-console.log(tinhTong(1,2,3,4,5,6))
+// function tinhTong(){
+//     const arr = Array.from(arguments)
+//     return arr.reduce((accumulator , currentValue) => {
+//         return accumulator + currentValue
+//     },0)
+// }
+// console.log(tinhTong(1,2,3,4,5,6))
+
+// 21 : Default parameter
+
+// function tinhTong(a , b = 0){
+//     return a + b
+// }
+// console.log(tinhTong(1))
+
+// 22 : Call
+// function greeting(name,age){
+//     console.log(`Hi! ${name} . I am ${age}`)
+//   }
+// greeting.call(null , 'Tom' , 10)
+  
